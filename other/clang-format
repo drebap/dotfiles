@@ -1,0 +1,4 @@
+BasedOnStyle: llvm
+AllowShortBlocksOnASingleLine: false
+AllowShortFunctionsOnASingleLine: false
+AllowShortCaseLabelsOnASingleLine: false
