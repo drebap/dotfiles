@@ -3,7 +3,7 @@ compinit
 
 PS1="%1~%(!.#.%%) "
 SAVEHIST=1000
-HISTFILE=~/.sh_history
+HISTFILE=~/.config/dotfiles/.sh_history
 
 export TERM='screen-256color'
 export LESS_TERMCAP_se=$'\E[0m'
