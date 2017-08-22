@@ -2,8 +2,8 @@ autoload -Uz compinit
 compinit
 
 PS1="%1~%(!.#.%%) "
-SAVEHIST=1000
-HISTFILE=~/.config/dotfiles/.sh_history
+SAVEHIST=100
+HISTFILE=~/.zsh_history
 
 export TERM='screen-256color'
 export LESS_TERMCAP_se=$'\E[0m'
