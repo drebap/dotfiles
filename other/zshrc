@@ -9,14 +9,6 @@ export TERM='screen-256color'
 export LESS_TERMCAP_se=$'\E[0m'
 export LESS_TERMCAP_so=$'\E[41m'
 
-# Ant/Tomcat
-export CATALINA_HOME=/opt/self/tomcat
-export PATH=$CATALINA_HOME/bin:$PATH
-
-# Solr
-export SOLRDIR=/opt/self/solr
-export PATH=$PATH:$SOLRDIR/bin
-
 # Rust
 export PATH=$PATH:~/.cargo/bin
 
@@ -29,7 +21,7 @@ alias ls='ls -G'
 alias ll='ls -l'
 alias la='ls -a'
 alias dotfiles='cd ~/.config/dotfiles'
-alias godev="cd $GOPATH/src/github.com/errbap"
+alias gop="cd $GOPATH/src/github.com/errbap"
 alias gvimrc='gvim ~/.vim/gvimrc'
 alias vimrc='vim ~/.vim/vimrc'
 alias zshrc='vim ~/.zshrc; . ~/.zshrc'
