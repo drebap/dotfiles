@@ -7,8 +7,6 @@ HISTFILE=~/.zsh_history
 
 export TERM=xterm-256color
 export CLICOLOR=1
-
-# Pager colors
 export LESS_TERMCAP_se=$'\E[0m'
 export LESS_TERMCAP_so=$'\E[41m'
 
@@ -19,15 +17,4 @@ alias ll='ls -l'
 alias vimrc='vim ~/.vim/vimrc'
 alias shrc='vim ~/.zshrc; . ~/.zshrc'
 
-
-if [ `uname` == "Linux" ]; then
-    alias ls="ls --color"
-
-    open() {
-        if [ -z "$1" ]; then
-            xdg-open .
-        else
-            xdg-open $1
-        fi
-    }
-fi
+[[ `uname` = "Linux" ]] && alias ls="ls --color" && open() { xdg-open $1 }
